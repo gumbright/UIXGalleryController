@@ -19,7 +19,7 @@
 ///////////////////////////////////////////////////////////////
 - (NSUInteger) numberOfItemsforGallery:(UIXGalleryController*) gallery
 {
-	return 2;
+	return 4;
 }
 
 ///////////////////////////////////////////////////////////////
@@ -40,12 +40,26 @@
 			
 		case 1:
 		{
-			UIImage* img = [UIImage imageNamed:@"image0.jpg"];
+			UIImage* img = [UIImage imageNamed:@"image1.jpg"];
 			dsi = [[[DelayedDatasourceItem alloc] initWithImage:img] autorelease];
 			
 //			NSString* uri = @"http://4.bp.blogspot.com/_M53GsEHCIsU/S9pSc4Wgl3I/AAAAAAAACIo/Ew_P0EEPSaQ/s1600/Karen-Gillan-001.jpg";
 //			[self requestImage:uri];
 			
+		}
+			break;
+			
+		case 2:
+		{
+			UIImage* img = [UIImage imageNamed:@"image2.png"];
+			dsi = [[[DatasourceItem alloc] initWithImage:img] autorelease];
+		}
+			break;
+
+		case 3:
+		{
+			UIImage* img = [UIImage imageNamed:@"image3.jpg"];
+			dsi = [[[DatasourceItem alloc] initWithImage:img] autorelease];
 		}
 			break;
 			

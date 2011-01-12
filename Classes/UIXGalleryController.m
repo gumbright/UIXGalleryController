@@ -98,19 +98,7 @@
 		self.multipleTouchEnabled = YES;
 		self.delegate = self;
 		self.zoomScale = 1.0;		
-		
 		imageView = nil;
-		
-		//		activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleWhiteLarge];
-		//		activityIndicator.hidesWhenStopped = YES;
-		//		CGRect frame = CGRectMake((sz.width - activityIndicator.frame.size.width)/2, 
-		//								  (sz.height - sz.height)/2, 
-		//								  activityIndicator.frame.size.width, activityIndicator.frame.size.height);
-		//		activityIndicator.frame = frame;
-		//		activityIndicator.tag = 9800;
-		//		[imageView addSubview:activityIndicator];
-		//		[activityIndicator release];
-		
     }
     return self;
 }
@@ -124,7 +112,7 @@
 	{
 		imageView = [[UIImageView alloc] initWithFrame:self.bounds];
 		imageView.contentMode = UIViewContentModeScaleAspectFit;
-		imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+		imageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 		imageView.tag = 9700;
 		[self addSubview:imageView];
 		[imageView release];		
@@ -345,10 +333,10 @@
 {
 	UIView* v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
 	
-//	UIXGalleryTouchableScrollView* tsv = [[UIXGalleryTouchableScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
 	UIScrollView* tsv = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
-//	tsv.touchableScrollViewDelegate = self;
-//	tsv.multipleTouchEnabled = YES;
+	tsv.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+	tsv.pagingEnabled = YES;
+	tsv.delegate = self;
 	[v addSubview:tsv];
 	scroll = tsv;
 	[tsv release];
@@ -356,6 +344,7 @@
 	toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 416, 320, 44)];
 	toolbar.barStyle = UIBarStyleBlack;
 	toolbar.translucent = YES;
+	toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
 	[v addSubview:toolbar];
 	[toolbar release];
 	
@@ -415,9 +404,6 @@
 	
 	CGSize sz = CGSizeMake(scroll.frame.size.width * [datasource numberOfItemsforGallery:self],scroll.frame.size.height);
 	scroll.contentSize = sz;
-	scroll.pagingEnabled = YES;
-//	scroll.touchableScrollViewDelegate = self;
-	scroll.delegate = self;
 	
 }
 
@@ -674,9 +660,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait || 
-			interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
-			interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+    return YES;
 }
 
 ////////////////////////////////////////////////////
