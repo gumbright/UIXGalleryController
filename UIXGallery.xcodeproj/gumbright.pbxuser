@@ -1,6 +1,12 @@
 // !$*UTF8*$!
 {
 	1D3623240D0F684500981E51 /* UIXGalleryAppDelegate.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = UIXGalleryAppDelegate.h;
+		path = /Users/gumbright/projects/uix/UIXGalleryController/Classes/UIXGalleryAppDelegate.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {919, 705}}";
 			sepNavSelRange = "{374, 0}";
@@ -8,6 +14,12 @@
 		};
 	};
 	1D3623250D0F684500981E51 /* UIXGalleryAppDelegate.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = UIXGalleryAppDelegate.m;
+		path = /Users/gumbright/projects/uix/UIXGalleryController/Classes/UIXGalleryAppDelegate.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1686, 1170}}";
 			sepNavSelRange = "{726, 0}";
@@ -21,6 +33,12 @@
 		);
 	};
 	28D7ACF60DDB3853001CB0EB /* UIXGalleryViewController.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = UIXGalleryViewController.h;
+		path = /Users/gumbright/projects/uix/UIXGalleryController/Classes/UIXGalleryViewController.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {919, 728}}";
 			sepNavSelRange = "{295, 0}";
@@ -28,6 +46,12 @@
 		};
 	};
 	28D7ACF70DDB3853001CB0EB /* UIXGalleryViewController.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = UIXGalleryViewController.m;
+		path = /Users/gumbright/projects/uix/UIXGalleryController/Classes/UIXGalleryViewController.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {919, 1066}}";
 			sepNavSelRange = "{1763, 0}";
@@ -217,6 +241,12 @@
 		indexTemplatePath = "";
 	};
 	9F05769B12D3B06400A6E745 /* UIXGalleryController.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = UIXGalleryController.h;
+		path = /Users/gumbright/projects/uix/UIXGalleryController/Classes/UIXGalleryController.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {919, 2002}}";
 			sepNavSelRange = "{0, 1443}";
@@ -224,10 +254,16 @@
 		};
 	};
 	9F05769C12D3B06400A6E745 /* UIXGalleryController.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = UIXGalleryController.m;
+		path = /Users/gumbright/projects/uix/UIXGalleryController/Classes/UIXGalleryController.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {919, 11622}}";
 			sepNavSelRange = "{5179, 8}";
-			sepNavVisRange = "{4541, 1340}";
+			sepNavVisRange = "{4541, 1432}";
 		};
 	};
 	9F0576A912D3B0B200A6E745 /* PBXTextBookmark */ = {
@@ -346,6 +382,12 @@
 		vrLoc = 4541;
 	};
 	9F50F07812D5FE7F00AD4E2B /* DelayedDatasourceItem.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = DelayedDatasourceItem.h;
+		path = /Users/gumbright/projects/uix/UIXGalleryController/Classes/DelayedDatasourceItem.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {919, 728}}";
 			sepNavSelRange = "{354, 0}";
@@ -353,6 +395,12 @@
 		};
 	};
 	9F50F07912D5FE7F00AD4E2B /* DelayedDatasourceItem.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = DelayedDatasourceItem.m;
+		path = /Users/gumbright/projects/uix/UIXGalleryController/Classes/DelayedDatasourceItem.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1179, 598}}";
 			sepNavSelRange = "{650, 0}";
@@ -370,6 +418,12 @@
 		vrLoc = 0;
 	};
 	9F7BA31012D4DD4D008FE195 /* GalleryDatasource.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = GalleryDatasource.h;
+		path = /Users/gumbright/projects/uix/UIXGalleryController/Classes/GalleryDatasource.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {919, 728}}";
 			sepNavSelRange = "{610, 0}";
@@ -377,6 +431,12 @@
 		};
 	};
 	9F7BA31112D4DD4D008FE195 /* GalleryDatasource.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = GalleryDatasource.m;
+		path = /Users/gumbright/projects/uix/UIXGalleryController/Classes/GalleryDatasource.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {919, 2249}}";
 			sepNavSelRange = "{1478, 0}";
@@ -384,6 +444,12 @@
 		};
 	};
 	9F7BA31312D4DE37008FE195 /* DatasourceItem.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = DatasourceItem.h;
+		path = /Users/gumbright/projects/uix/UIXGalleryController/Classes/DatasourceItem.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {919, 728}}";
 			sepNavSelRange = "{263, 107}";
@@ -391,6 +457,12 @@
 		};
 	};
 	9F7BA31412D4DE37008FE195 /* DatasourceItem.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = DatasourceItem.m;
+		path = /Users/gumbright/projects/uix/UIXGalleryController/Classes/DatasourceItem.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {991, 476}}";
 			sepNavSelRange = "{426, 0}";
