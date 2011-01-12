@@ -151,6 +151,7 @@
 	if (busyView != nil)
 	{
 		[busyView removeFromSuperview];
+		busyView = nil;
 	}
 	
 	[self displayImage:img];
