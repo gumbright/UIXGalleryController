@@ -1,0 +1,4 @@
+build/
+FSBO.xcodeproj/*.pbxuser
+FSBO.xcodeproj/*.mode1v3
+.DS_Store

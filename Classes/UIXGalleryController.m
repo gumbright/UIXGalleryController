@@ -260,6 +260,10 @@
 - (void) clear 
 {
 	imageView.image = nil;
+	[imageView removeFromSuperview];
+	imageView = nil;
+	self.item = nil;
+	
 }
 
 ////////////////////////////////////////////////////
@@ -496,6 +500,7 @@
 		{
 			[[sv retain] removeFromSuperview];
 			[sv clear];
+			sv.tag = 0;
 			[galleryCellPool addObject:sv];
 			[sv release];
 		}
@@ -508,6 +513,7 @@
 		{
 			[[sv retain] removeFromSuperview];
 			[sv clear];
+			sv.tag = 0;
 			[galleryCellPool addObject:sv];
 			[sv release];
 		}

@@ -1,788 +1,0 @@
-TUIXGallery
-v7
-r0
-t316039189.680262
-cCheck dependencies
-cCpResource build/Debug-iphoneos/UIXGallery.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-cProcessInfoPlistFile /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/Info.plist UIXGallery-Info.plist
-cCompileXIB /Users/gumbright/projects/uix/UIXGallery/MainWindow.xib
-cCompileXIB /Users/gumbright/projects/uix/UIXGallery/UIXGalleryViewController.xib
-cCompileXIB /Users/gumbright/projects/uix/UIXGallery/UIXGallery.xib
-cCopyPNGFile /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/icon_arrow_left.png graphics/icon_arrow_left.png
-cCopyPNGFile /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/icon_arrow_right.png graphics/icon_arrow_right.png
-cCpResource build/Debug-iphoneos/UIXGallery.app/image0.jpg graphics/image0.jpg
-cProcessPCH /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-bfnlgjacwemetzdwwnwwyfzfmbye/UIXGallery_Prefix.pch.gch UIXGallery_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-euuixqqugthpbocpswpznvchblxv/UIXGallery_Prefix.pch.gch UIXGallery_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/main.o /Users/gumbright/projects/uix/UIXGallery/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryAppDelegate.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryViewController.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryController.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/GalleryDatasource.o /Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/DatasourceItem.o /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryCell.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryCell.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/DelayedDatasourceItem.o /Users/gumbright/projects/uix/UIXGallery/Classes/DelayedDatasourceItem.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/main.o /Users/gumbright/projects/uix/UIXGallery/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGallery normal armv6
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryAppDelegate.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryViewController.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryController.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/GalleryDatasource.o /Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/DatasourceItem.o /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryCell.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryCell.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/DelayedDatasourceItem.o /Users/gumbright/projects/uix/UIXGallery/Classes/DelayedDatasourceItem.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGallery normal armv7
-cCreateUniversalBinary /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/UIXGallery normal "armv6 armv7"
-cGenerateDSYMFile /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app.dSYM /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/UIXGallery
-cProcessProductPackaging "/Users/gumbright/Library/MobileDevice/Provisioning Profiles/D6D07303-0333-4755-8009-3A44336F043E.mobileprovision" /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/embedded.mobileprovision
-cTouch /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app
-cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery.xcent
-cCodeSign /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
-c000000004CC7DC9E0000000000000110
-t1288166558
-s272
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
-c000000004CB3DFCF00000000000001A7
-t1286856655
-s423
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-c000000004CB3DFCF00000000000001E5
-t1286856655
-s485
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004CC10EF500000000003532B0
-t1287720693
-s3486384
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004CC10F4700000000003E1F20
-t1287720775
-s4071200
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004CC10F1C0000000000001466
-t1287720732
-s5222
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
-c000000004CC1111C00000000000000C4
-t1287721244
-s196
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c000000004CC1127D0000000000267530
-t1287721597
-s2520368
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004CC11AE60000000000000AA1
-t1287723750
-s2721
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004CC11B750000000000C769F0
-t1287723893
-s13068784
-
-N/Users/gumbright/Library/MobileDevice/Provisioning Profiles/D6D07303-0333-4755-8009-3A44336F043E.mobileprovision
-c000000004CB86CB40000000000001D60
-t1287154868
-s7520
-
-N/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h
-c000000004D24A86F0000000000000178
-t1294248047
-s376
-i<Foundation/Foundation.h>
-i"UIXGalleryController.h"
-
-N/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m
-c000000004D24A82800000000000001AF
-t1294247976
-s431
-i"DatasourceItem.h"
-i"UIXGalleryController.h"
-
-N/Users/gumbright/projects/uix/UIXGallery/Classes/DelayedDatasourceItem.h
-c000000004D25C8DC000000000000017A
-t1294321884
-s378
-i<Foundation/Foundation.h>
-
-N/Users/gumbright/projects/uix/UIXGallery/Classes/DelayedDatasourceItem.m
-c000000004D25C8EC00000000000002CC
-t1294321900
-s716
-i"DelayedDatasourceItem.h"
-
-N/Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.h
-c000000004D24E18A0000000000000209
-t1294262666
-s521
-i<Foundation/Foundation.h>
-i"UIXGalleryController.h"
-
-N/Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m
-c000000004D25C9CA0000000000000F8F
-t1294322122
-s3983
-i"GalleryDatasource.h"
-i"DatasourceItem.h"
-i"DelayedDatasourceItem.h"
-
-N/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryAppDelegate.h
-c000000004D237920000000000000020B
-t1294170400
-s523
-i<UIKit/UIKit.h>
-
-N/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryAppDelegate.m
-c000000004D2379200000000000000AE8
-t1294170400
-s2792
-i"UIXGalleryAppDelegate.h"
-i"UIXGalleryViewController.h"
-
-N/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryCell.h
-c000000004D2627BD0000000000000266
-t1294346173
-s614
-i<UIKit/UIKit.h>
-i"UIXGalleryController.h"
-
-N/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryCell.m
-c000000004D2627BD0000000000000F97
-t1294346173
-s3991
-i"UIXGalleryCell.h"
-
-N/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.h
-c000000004D2627EA0000000000000953
-t1294346218
-s2387
-i<UIKit/UIKit.h>
-
-N/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m
-c000000004D2627BD0000000000004B23
-t1294346173
-s19235
-i"UIXGalleryController.h"
-i<QuartzCore/QuartzCore.h>
-i"UIXGalleryCell.h"
-
-N/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.h
-c000000004D24A8C1000000000000015A
-t1294248129
-s346
-i<UIKit/UIKit.h>
-i"GalleryDatasource.h"
-
-N/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m
-c000000004D24AA1200000000000006F3
-t1294248466
-s1779
-i"UIXGalleryViewController.h"
-i"UIXGalleryController.h"
-
-N/Users/gumbright/projects/uix/UIXGallery/MainWindow.xib
-c000000004D2378B20000000000004E4D
-t1294170290
-s20045
-
-N/Users/gumbright/projects/uix/UIXGallery/UIXGallery.xib
-c000000004D2626DF0000000000007D67
-t1294345951
-s32103
-
-N/Users/gumbright/projects/uix/UIXGallery/UIXGalleryViewController.xib
-c000000004D24C3DA0000000000004BE0
-t1294255066
-s19424
-
-N/Users/gumbright/projects/uix/UIXGallery/UIXGallery_Prefix.pch
-c000000004D2378B200000000000000BD
-t1294170290
-s189
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app
-t1294346389
-s510
-
-N/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app.dSYM
-t1294346388
-s102
-
-N/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/Info.plist
-t1294346384
-s793
-
-N/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/MainWindow.nib
-t1294346384
-s1129
-
-N/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/PkgInfo
-t1294346384
-s8
-
-N/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/ResourceRules.plist
-t1294346384
-s485
-
-N/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/UIXGallery
-t1294346388
-s109388
-
-N/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/UIXGallery.nib
-t1294346385
-s1964
-
-N/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/UIXGalleryViewController.nib
-t1294346384
-s1494
-
-N/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/embedded.mobileprovision
-t1294346388
-s7520
-
-N/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/icon_arrow_left.png
-t1294346385
-s485
-
-N/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/icon_arrow_right.png
-t1294346385
-s481
-
-N/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/image0.jpg
-t1294346385
-s243690
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/DatasourceItem.o
-t1294346387
-s9624
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/DelayedDatasourceItem.o
-t1294346387
-s11472
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/GalleryDatasource.o
-t1294346387
-s41464
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGallery
-t1294346388
-s52592
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGallery.LinkFileList
-c000000004D2628900000000000000447
-t1294346384
-s1095
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryAppDelegate.o
-t1294346387
-s53620
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryCell.o
-t1294346387
-s52444
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryController.o
-t1294346387
-s82856
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryViewController.o
-t1294346387
-s41476
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/main.o
-t1294346387
-s6452
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/DatasourceItem.o
-t1294346388
-s9588
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/DelayedDatasourceItem.o
-t1294346388
-s11356
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/GalleryDatasource.o
-t1294346388
-s41400
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGallery
-t1294346388
-s52044
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGallery.LinkFileList
-c000000004D2628900000000000000447
-t1294346384
-s1095
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryAppDelegate.o
-t1294346388
-s53532
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryCell.o
-t1294346388
-s52196
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryController.o
-t1294346388
-s80860
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryViewController.o
-t1294346388
-s41424
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/main.o
-t1294346387
-s6436
-
-N/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery.xcent
-t1294346388
-s426
-
-N/Users/gumbright/projects/uix/UIXGallery/graphics/icon_arrow_left.png
-c000000004C83CA3A00000000000001A1
-t1283705402
-s417
-
-N/Users/gumbright/projects/uix/UIXGallery/graphics/icon_arrow_right.png
-c000000004C83CA3A0000000000000180
-t1283705402
-s384
-
-N/Users/gumbright/projects/uix/UIXGallery/graphics/image0.jpg
-c000000004D24A651000000000003B7EA
-t1294247505
-s243690
-
-N/Users/gumbright/projects/uix/UIXGallery/main.m
-c000000004D2378B20000000000000168
-t1294170290
-s360
-i<UIKit/UIKit.h>
-
-N/var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-bfnlgjacwemetzdwwnwwyfzfmbye/UIXGallery_Prefix.pch.gch
-t1294346387
-s9983704
-
-N/var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-euuixqqugthpbocpswpznvchblxv/UIXGallery_Prefix.pch.gch
-t1294346386
-s10446552
-
-NUIXGallery-Info.plist
-c000000004D2378B2000000000000038D
-t1294170290
-s909
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies316039184#316039184#0(0"0(0#1#0"8625703968#0"0#
-
-CCodeSign /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app
-s316039188.887188
-e316039189.680212
-r1
-xCodeSign
-x/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app
-lSLF07#2@44"CodeSign build/Debug-iphoneos/UIXGallery.app316039188#316039189#0(0"0(0#0#76"/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app8662744864#671"    cd /Users/gumbright/projects/uix/UIXGallery    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Guy Umbright (V437N889DC)" --resource-rules=/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/ResourceRules.plist --entitlements /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery.xcent /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/DatasourceItem.o /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s316039187.706893
-e316039187.759106
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/DatasourceItem.o
-x/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m:9:
-o/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h:21: warning: property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute
-o/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m:32: warning: property 'unavailable' requires method '-unavailable' to be defined - use @synthesize, @dynamic or provide a method implementation
-lSLF07#2@73"Compile /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m316039187#316039187#0(470"In file included from /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m:9:/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h:21: warning: property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m:32: warning: property 'unavailable' requires method '-unavailable' to be defined - use @synthesize, @dynamic or provide a method implementation2(22@89"Property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute316039187#91#169#2(7@87"In file included from /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m316039187#18446744073709551615#0#0(6@65"/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m315940776#9#0#9#0#0"0(13@158"Property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute in /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h316039187#18446744073709551615#0#0(6@65"/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h315940847#21#0#21#0#0"0(6@65"/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h315940847#21#0#21#0#0"0(22@130"Property 'unavailable' requires method '-unavailable' to be defined - use @synthesize, @dynamic or provide a method implementation316039187#260#210#0(6@65"/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m315940776#32#0#32#0#0"0(0#0#65"/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m8707644416#1834"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv6 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-bfnlgjacwemetzdwwnwwyfzfmbye/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/DatasourceItem.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/DelayedDatasourceItem.o /Users/gumbright/projects/uix/UIXGallery/Classes/DelayedDatasourceItem.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s316039187.794111
-e316039187.848104
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/DelayedDatasourceItem.o
-x/Users/gumbright/projects/uix/UIXGallery/Classes/DelayedDatasourceItem.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/gumbright/projects/uix/UIXGallery/Classes/DelayedDatasourceItem.m316039187#316039187#0(0"0(0#0#72"/Users/gumbright/projects/uix/UIXGallery/Classes/DelayedDatasourceItem.m8681661376#1848"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv6 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-bfnlgjacwemetzdwwnwwyfzfmbye/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/Classes/DelayedDatasourceItem.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/DelayedDatasourceItem.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/GalleryDatasource.o /Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s316039187.617566
-e316039187.706799
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/GalleryDatasource.o
-x/Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m:10:
-o/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h:21: warning: property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute
-lSLF07#2@76"Compile /Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m316039187#316039187#0(264"In file included from /Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m:10:/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h:21: warning: property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute1(22@89"Property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute316039187#95#169#2(7@90"In file included from /Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m316039187#18446744073709551615#0#0(6@68"/Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m316014922#10#0#10#0#0"0(13@158"Property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute in /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h316039187#18446744073709551615#0#0(6@65"/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h315940847#21#0#21#0#0"0(6@65"/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h315940847#21#0#21#0#0"0(0#0#68"/Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m8670288704#1840"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv6 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-bfnlgjacwemetzdwwnwwyfzfmbye/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/GalleryDatasource.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryAppDelegate.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s316039187.348045
-e316039187.537675
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryAppDelegate.o
-x/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryAppDelegate.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryAppDelegate.m316039187#316039187#0(0"0(0#0#72"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryAppDelegate.m8679449696#1848"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv6 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-bfnlgjacwemetzdwwnwwyfzfmbye/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryAppDelegate.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryAppDelegate.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryCell.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryCell.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s316039187.759392
-e316039187.857995
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryCell.o
-x/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryCell.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@73"Compile /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryCell.m316039187#316039187#0(0"0(0#0#65"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryCell.m8697749888#1834"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv6 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-bfnlgjacwemetzdwwnwwyfzfmbye/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryCell.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryCell.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryController.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s316039187.537784
-e316039187.793795
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryController.o
-x/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m: In function '-[UIXGalleryController currentIndexChanged]':
-o/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m:380: warning: type 'id <UIXGalleryItem>' does not conform to the 'NSObject' protocol
-o/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m: At top level:
-o/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m:710: warning: incomplete implementation of class 'UIXGalleryController'
-o/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m:710: warning: method definition for '-reloadImageAtIndex:' not found
-lSLF07#2@79"Compile /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m316039187#316039187#0(661"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m: In function '-[UIXGalleryController currentIndexChanged]':/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m:380: warning: type 'id <UIXGalleryItem>' does not conform to the 'NSObject' protocol/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m: At top level:/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m:710: warning: incomplete implementation of class 'UIXGalleryController'/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m:710: warning: method definition for '-reloadImageAtIndex:' not found4(22@70"Type 'id <UIXGalleryItem>' does not conform to the 'NSObject' protocol316039187#132#157#0(6@71"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m316038973#380#0#380#0#45"type '*' does not conform to the '*' protocol0(23@13"At top level:316039187#289#87#0(6@71"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m316038973#0#0#0#0#0"0(22@57"Incomplete implementation of class 'UIXGalleryController'316039187#376#144#0(6@71"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m316038973#710#0#710#0#38"incomplete implementation of class '*'0(22@54"Method definition for '-reloadImageAtIndex:' not found316039187#520#141#0(6@71"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m316038973#710#0#710#0#35"method definition for '*' not found0(0#0#71"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m8617271680#1846"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv6 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-bfnlgjacwemetzdwwnwwyfzfmbye/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryController.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryViewController.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s316039187.518521
-e316039187.617458
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryViewController.o
-x/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m: In function '-[UIXGalleryViewController galleryPressed:]':
-o/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m:73: warning: class 'GalleryDatasource' does not implement the 'UIXGalleryDatasource' protocol
-lSLF07#2@83"Compile /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m316039187#316039187#0(306"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m: In function '-[UIXGalleryViewController galleryPressed:]':/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m:73: warning: class 'GalleryDatasource' does not implement the 'UIXGalleryDatasource' protocol1(22@80"Class 'GalleryDatasource' does not implement the 'UIXGalleryDatasource' protocol316039187#136#170#0(6@75"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m315941266#73#0#73#0#45"class '*' does not implement the '*' protocol0(0#0#75"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m8625023488#1854"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv6 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-bfnlgjacwemetzdwwnwwyfzfmbye/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGalleryViewController.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/main.o /Users/gumbright/projects/uix/UIXGallery/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s316039187.346956
-e316039187.518423
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/main.o
-x/Users/gumbright/projects/uix/UIXGallery/main.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/gumbright/projects/uix/UIXGallery/main.m316039187#316039187#0(0"0(0#0#47"/Users/gumbright/projects/uix/UIXGallery/main.m8707759520#1806"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv6 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-bfnlgjacwemetzdwwnwwyfzfmbye/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/main.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/main.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/DatasourceItem.o /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s316039188.356475
-e316039188.412810
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/DatasourceItem.o
-x/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m:9:
-o/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h:21: warning: property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute
-o/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m:32: warning: property 'unavailable' requires method '-unavailable' to be defined - use @synthesize, @dynamic or provide a method implementation
-lSLF07#2@73"Compile /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m316039188#316039188#0(470"In file included from /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m:9:/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h:21: warning: property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m:32: warning: property 'unavailable' requires method '-unavailable' to be defined - use @synthesize, @dynamic or provide a method implementation2(22@89"Property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute316039188#91#169#2(7@87"In file included from /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m316039188#18446744073709551615#0#0(6@65"/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m315940776#9#0#9#0#0"0(13@158"Property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute in /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h316039188#18446744073709551615#0#0(6@65"/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h315940847#21#0#21#0#0"0(6@65"/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h315940847#21#0#21#0#0"0(22@130"Property 'unavailable' requires method '-unavailable' to be defined - use @synthesize, @dynamic or provide a method implementation316039188#260#210#0(6@65"/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m315940776#32#0#32#0#0"0(0#0#65"/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m8697571008#1834"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv7 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-euuixqqugthpbocpswpznvchblxv/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/DatasourceItem.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/DelayedDatasourceItem.o /Users/gumbright/projects/uix/UIXGallery/Classes/DelayedDatasourceItem.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s316039188.412882
-e316039188.483732
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/DelayedDatasourceItem.o
-x/Users/gumbright/projects/uix/UIXGallery/Classes/DelayedDatasourceItem.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/gumbright/projects/uix/UIXGallery/Classes/DelayedDatasourceItem.m316039188#316039188#0(0"0(0#0#72"/Users/gumbright/projects/uix/UIXGallery/Classes/DelayedDatasourceItem.m8668111392#1848"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv7 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-euuixqqugthpbocpswpznvchblxv/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/Classes/DelayedDatasourceItem.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/DelayedDatasourceItem.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/GalleryDatasource.o /Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s316039188.271913
-e316039188.356316
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/GalleryDatasource.o
-x/Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m:10:
-o/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h:21: warning: property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute
-lSLF07#2@76"Compile /Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m316039188#316039188#0(264"In file included from /Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m:10:/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h:21: warning: property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute1(22@89"Property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute316039188#95#169#2(7@90"In file included from /Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m316039188#18446744073709551615#0#0(6@68"/Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m316014922#10#0#10#0#0"0(13@158"Property 'image' and its protocol 'UIXGalleryItem' don't have matching 'atomic' attribute in /Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h316039188#18446744073709551615#0#0(6@65"/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h315940847#21#0#21#0#0"0(6@65"/Users/gumbright/projects/uix/UIXGallery/Classes/DatasourceItem.h315940847#21#0#21#0#0"0(0#0#68"/Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m8708009312#1840"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv7 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-euuixqqugthpbocpswpznvchblxv/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/Classes/GalleryDatasource.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/GalleryDatasource.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryAppDelegate.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s316039187.907607
-e316039188.017857
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryAppDelegate.o
-x/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryAppDelegate.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryAppDelegate.m316039187#316039188#0(0"0(0#0#72"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryAppDelegate.m8675736736#1848"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv7 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-euuixqqugthpbocpswpznvchblxv/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryAppDelegate.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryAppDelegate.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryCell.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryCell.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s316039188.411227
-e316039188.500234
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryCell.o
-x/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryCell.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@73"Compile /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryCell.m316039188#316039188#0(0"0(0#0#65"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryCell.m8681443424#1834"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv7 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-euuixqqugthpbocpswpznvchblxv/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryCell.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryCell.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryController.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s316039188.076639
-e316039188.271744
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryController.o
-x/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m: In function '-[UIXGalleryController currentIndexChanged]':
-o/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m:380: warning: type 'id <UIXGalleryItem>' does not conform to the 'NSObject' protocol
-o/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m: At top level:
-o/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m:710: warning: incomplete implementation of class 'UIXGalleryController'
-o/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m:710: warning: method definition for '-reloadImageAtIndex:' not found
-lSLF07#2@79"Compile /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m316039188#316039188#0(661"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m: In function '-[UIXGalleryController currentIndexChanged]':/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m:380: warning: type 'id <UIXGalleryItem>' does not conform to the 'NSObject' protocol/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m: At top level:/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m:710: warning: incomplete implementation of class 'UIXGalleryController'/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m:710: warning: method definition for '-reloadImageAtIndex:' not found4(22@70"Type 'id <UIXGalleryItem>' does not conform to the 'NSObject' protocol316039188#132#157#0(6@71"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m316038973#380#0#380#0#45"type '*' does not conform to the '*' protocol0(23@13"At top level:316039188#289#87#0(6@71"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m316038973#0#0#0#0#0"0(22@57"Incomplete implementation of class 'UIXGalleryController'316039188#376#144#0(6@71"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m316038973#710#0#710#0#38"incomplete implementation of class '*'0(22@54"Method definition for '-reloadImageAtIndex:' not found316039188#520#141#0(6@71"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m316038973#710#0#710#0#35"method definition for '*' not found0(0#0#71"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m8625932704#1846"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv7 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-euuixqqugthpbocpswpznvchblxv/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryController.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryController.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryViewController.o /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s316039188.017953
-e316039188.076536
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryViewController.o
-x/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m: In function '-[UIXGalleryViewController galleryPressed:]':
-o/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m:73: warning: class 'GalleryDatasource' does not implement the 'UIXGalleryDatasource' protocol
-lSLF07#2@83"Compile /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m316039188#316039188#0(306"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m: In function '-[UIXGalleryViewController galleryPressed:]':/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m:73: warning: class 'GalleryDatasource' does not implement the 'UIXGalleryDatasource' protocol1(22@80"Class 'GalleryDatasource' does not implement the 'UIXGalleryDatasource' protocol316039188#136#170#0(6@75"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m315941266#73#0#73#0#45"class '*' does not implement the '*' protocol0(0#0#75"/Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m8679283840#1854"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv7 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-euuixqqugthpbocpswpznvchblxv/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/Classes/UIXGalleryViewController.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGalleryViewController.o0#
-
-CCompileC build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/main.o /Users/gumbright/projects/uix/UIXGallery/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s316039187.848200
-e316039187.907521
-r1
-xCompileC
-xbuild/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/main.o
-x/Users/gumbright/projects/uix/UIXGallery/main.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/gumbright/projects/uix/UIXGallery/main.m316039187#316039187#0(0"0(0#0#47"/Users/gumbright/projects/uix/UIXGallery/main.m8657887424#1806"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv7 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -include /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-euuixqqugthpbocpswpznvchblxv/UIXGallery_Prefix.pch -c /Users/gumbright/projects/uix/UIXGallery/main.m -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/main.o0#
-
-CCompileXIB /Users/gumbright/projects/uix/UIXGallery/MainWindow.xib
-s316039184.469439
-e316039184.857704
-r1
-xCompileXIB
-x/Users/gumbright/projects/uix/UIXGallery/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib316039184#316039184#0(0"0(0#0#55"/Users/gumbright/projects/uix/UIXGallery/MainWindow.xib8710970848#551"    cd /Users/gumbright/projects/uix/UIXGallery    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/MainWindow.nib /Users/gumbright/projects/uix/UIXGallery/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCompileXIB /Users/gumbright/projects/uix/UIXGallery/UIXGallery.xib
-s316039184.857790
-e316039185.309317
-r1
-xCompileXIB
-x/Users/gumbright/projects/uix/UIXGallery/UIXGallery.xib
-lSLF07#2@25"CompileXIB UIXGallery.xib316039184#316039185#0(0"0(0#0#55"/Users/gumbright/projects/uix/UIXGallery/UIXGallery.xib8664186816#551"    cd /Users/gumbright/projects/uix/UIXGallery    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/UIXGallery.nib /Users/gumbright/projects/uix/UIXGallery/UIXGallery.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCompileXIB /Users/gumbright/projects/uix/UIXGallery/UIXGalleryViewController.xib
-s316039184.470173
-e316039184.963773
-r1
-xCompileXIB
-x/Users/gumbright/projects/uix/UIXGallery/UIXGalleryViewController.xib
-lSLF07#2@39"CompileXIB UIXGalleryViewController.xib316039184#316039184#0(0"0(0#0#69"/Users/gumbright/projects/uix/UIXGallery/UIXGalleryViewController.xib8708835456#579"    cd /Users/gumbright/projects/uix/UIXGallery    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/UIXGalleryViewController.nib /Users/gumbright/projects/uix/UIXGallery/UIXGalleryViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCopyPNGFile /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/icon_arrow_left.png graphics/icon_arrow_left.png
-s316039184.963861
-e316039185.274743
-r1
-xCopyPNGFile
-x/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/icon_arrow_left.png
-xgraphics/icon_arrow_left.png
-lSLF07#2@96"CopyPNGFile build/Debug-iphoneos/UIXGallery.app/icon_arrow_left.png graphics/icon_arrow_left.png316039184#316039185#0(0"0(0#0#69"/Users/gumbright/projects/uix/UIXGallery/graphics/icon_arrow_left.png8662831232#596"    cd /Users/gumbright/projects/uix/UIXGallery    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/gumbright/projects/uix/UIXGallery/graphics/icon_arrow_left.png /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/icon_arrow_left.png0#
-
-CCopyPNGFile /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/icon_arrow_right.png graphics/icon_arrow_right.png
-s316039185.274837
-e316039185.312130
-r1
-xCopyPNGFile
-x/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/icon_arrow_right.png
-xgraphics/icon_arrow_right.png
-lSLF07#2@98"CopyPNGFile build/Debug-iphoneos/UIXGallery.app/icon_arrow_right.png graphics/icon_arrow_right.png316039185#316039185#0(0"0(0#0#70"/Users/gumbright/projects/uix/UIXGallery/graphics/icon_arrow_right.png8658419008#598"    cd /Users/gumbright/projects/uix/UIXGallery    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/gumbright/projects/uix/UIXGallery/graphics/icon_arrow_right.png /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/icon_arrow_right.png0#
-
-CCpResource build/Debug-iphoneos/UIXGallery.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-s316039184.416811
-e316039184.469353
-r1
-xCpResource
-xbuild/Debug-iphoneos/UIXGallery.app/ResourceRules.plist
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist316039184#316039184#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist5423551314508738560#501"    cd /Users/gumbright/projects/uix/UIXGallery    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app0#
-
-CCpResource build/Debug-iphoneos/UIXGallery.app/image0.jpg graphics/image0.jpg
-s316039185.309391
-e316039185.320685
-r1
-xCpResource
-xbuild/Debug-iphoneos/UIXGallery.app/image0.jpg
-xgraphics/image0.jpg
-lSLF07#2@24"Copy graphics/image0.jpg316039185#316039185#0(0"0(0#0#60"/Users/gumbright/projects/uix/UIXGallery/graphics/image0.jpg8654180160#472"    cd /Users/gumbright/projects/uix/UIXGallery    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/gumbright/projects/uix/UIXGallery/graphics/image0.jpg /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app0#
-
-CCreateUniversalBinary /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/UIXGallery normal "armv6 armv7"
-s316039188.708439
-e316039188.771586
-r1
-xCreateUniversalBinary
-x/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/UIXGallery
-xnormal
-xarmv6 armv7
-lSLF07#2@89"CreateUniversalBinary build/Debug-iphoneos/UIXGallery.app/UIXGallery normal "armv6 armv7"316039188#316039188#0(0"0(0#0#52"/Users/gumbright/projects/uix/UIXGallery/armv6 armv78711289984#550"    cd /Users/gumbright/projects/uix/UIXGallery    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGallery /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGallery -output /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/UIXGallery0#
-
-CGenerateDSYMFile /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app.dSYM /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/UIXGallery
-s316039188.771707
-e316039188.852464
-r1
-xGenerateDSYMFile
-x/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app.dSYM
-x/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/UIXGallery
-lSLF07#2@104"GenerateDSYMFile build/Debug-iphoneos/UIXGallery.app.dSYM build/Debug-iphoneos/UIXGallery.app/UIXGallery316039188#316039188#0(0"0(0#0#87"/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/UIXGallery8707949952#377"    cd /Users/gumbright/projects/uix/UIXGallery    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/UIXGallery -o /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app.dSYM0#
-
-CLd /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGallery normal armv6
-s316039187.858082
-e316039188.411129
-r1
-xLd
-x/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGallery
-xnormal
-xarmv6
-lSLF07#2@132"Link /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGallery316039187#316039188#0(0"0(0#0#0"8628617024#909"    cd /Users/gumbright/projects/uix/UIXGallery    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -filelist /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGallery.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework QuartzCore -framework CoreGraphics -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv6/UIXGallery0#
-
-CLd /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGallery normal armv7
-s316039188.500447
-e316039188.708333
-r1
-xLd
-x/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGallery
-xnormal
-xarmv7
-lSLF07#2@132"Link /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGallery316039188#316039188#0(0"0(0#0#0"8658033440#909"    cd /Users/gumbright/projects/uix/UIXGallery    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -filelist /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGallery.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework QuartzCore -framework CoreGraphics -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/Objects-normal/armv7/UIXGallery0#
-
-CProcessInfoPlistFile /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/Info.plist UIXGallery-Info.plist
-s316039184.418332
-e316039184.452850
-r1
-xProcessInfoPlistFile
-x/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/Info.plist
-xUIXGallery-Info.plist
-lSLF07#2@29"Process UIXGallery-Info.plist316039184#316039184#0(0"0(0#0#62"/Users/gumbright/projects/uix/UIXGallery/UIXGallery-Info.plist8665661824#582"    cd /Users/gumbright/projects/uix/UIXGallery    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility UIXGallery-Info.plist -genpkginfo /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/ResourceRules.plist -o /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/Info.plist0#
-
-CProcessPCH /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-bfnlgjacwemetzdwwnwwyfzfmbye/UIXGallery_Prefix.pch.gch UIXGallery_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
-s316039185.320809
-e316039187.346843
-r1
-xProcessPCH
-x/var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-bfnlgjacwemetzdwwnwwyfzfmbye/UIXGallery_Prefix.pch.gch
-xUIXGallery_Prefix.pch
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@32"Precompile UIXGallery_Prefix.pch316039185#316039187#0(0"0(0#0#62"/Users/gumbright/projects/uix/UIXGallery/UIXGallery_Prefix.pch8711405536#1699"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv6 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -c /Users/gumbright/projects/uix/UIXGallery/UIXGallery_Prefix.pch -o /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-bfnlgjacwemetzdwwnwwyfzfmbye/UIXGallery_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-euuixqqugthpbocpswpznvchblxv/UIXGallery_Prefix.pch.gch UIXGallery_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-s316039185.321620
-e316039186.984765
-r1
-xProcessPCH
-x/var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-euuixqqugthpbocpswpznvchblxv/UIXGallery_Prefix.pch.gch
-xUIXGallery_Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@32"Precompile UIXGallery_Prefix.pch316039185#316039186#0(0"0(0#0#62"/Users/gumbright/projects/uix/UIXGallery/UIXGallery_Prefix.pch8709638368#1699"    cd /Users/gumbright/projects/uix/UIXGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-generated-files.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-own-target-headers.hmap -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-all-target-headers.hmap -iquote /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery-project-headers.hmap -F/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos -I/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/include -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources/armv7 -I/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/DerivedSources -c /Users/gumbright/projects/uix/UIXGallery/UIXGallery_Prefix.pch -o /var/folders/94/94xA0BiDGoWdV5ZHu5SP6U+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/UIXGallery_Prefix-euuixqqugthpbocpswpznvchblxv/UIXGallery_Prefix.pch.gch0#
-
-CProcessProductPackaging "/Users/gumbright/Library/MobileDevice/Provisioning Profiles/D6D07303-0333-4755-8009-3A44336F043E.mobileprovision" /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/embedded.mobileprovision
-s316039188.852553
-e316039188.867126
-r1
-xProcessProductPackaging
-x/Users/gumbright/Library/MobileDevice/Provisioning Profiles/D6D07303-0333-4755-8009-3A44336F043E.mobileprovision
-x/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/embedded.mobileprovision
-lSLF07#2@199"ProcessProductPackaging "/Users/gumbright/Library/MobileDevice/Provisioning Profiles/D6D07303-0333-4755-8009-3A44336F043E.mobileprovision" build/Debug-iphoneos/UIXGallery.app/embedded.mobileprovision316039188#316039188#0(0"0(0#0#101"/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/embedded.mobileprovision8670044384#434"    cd /Users/gumbright/projects/uix/UIXGallery    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/gumbright/Library/MobileDevice/Provisioning Profiles/D6D07303-0333-4755-8009-3A44336F043E.mobileprovision" -o /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app/embedded.mobileprovision0#
-
-CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery.xcent
-s316039188.870089
-e316039188.887090
-r1
-xProcessProductPackaging
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
-x/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery.xcent
-lSLF07#2@184"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery.xcent316039188#316039188#0(0"0(0#0#112"/Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery.xcent8628223552#445"    cd /Users/gumbright/projects/uix/UIXGallery    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/gumbright/projects/uix/UIXGallery/build/UIXGallery.build/Debug-iphoneos/UIXGallery.build/UIXGallery.xcent0#
-
-CTouch /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app
-s316039188.867199
-e316039188.870019
-r1
-xTouch
-x/Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app
-lSLF07#2@82"Touch /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app316039188#316039188#0(0"0(0#0#0"8665036512#271"    cd /Users/gumbright/projects/uix/UIXGallery    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/gumbright/projects/uix/UIXGallery/build/Debug-iphoneos/UIXGallery.app0#
-
