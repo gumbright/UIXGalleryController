@@ -227,16 +227,13 @@
 		{				
 			case 1:
 			{
-				NSLog(@"single");
 				[self performSelector:@selector(signalSingleTap:) withObject:nil afterDelay:0.30];
 				//[[NSNotificationCenter defaultCenter] postNotificationName:UIXGALLERY_SINGLETAP_NOTIFICATION object:self];
 			}
 				break;
 
 			case 2:
-			{
-				NSLog(@"double");
-				
+			{				
 				[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(signalSingleTap:) object:nil];
 
 				[UIView beginAnimations:@"scalechange" context:nil];
@@ -337,19 +334,20 @@
 - (void) loadView
 {
 	UIView* v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
+	v.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	
-	UIScrollView* tsv = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
-	tsv.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-	tsv.pagingEnabled = YES;
-	tsv.delegate = self;
-	[v addSubview:tsv];
-	scroll = tsv;
-	[tsv release];
+	scroll = [[UIScrollView alloc] initWithFrame:v.bounds];
+	scroll.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+	scroll.pagingEnabled = YES;
+	scroll.delegate = self;
+	[v addSubview:scroll];
+	[scroll release];
 	
 	toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 416, 320, 44)];
 	toolbar.barStyle = UIBarStyleBlack;
 	toolbar.translucent = YES;
 	toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+	[scroll addSubview:toolbar];
 	[v addSubview:toolbar];
 	[toolbar release];
 	
@@ -547,7 +545,6 @@
 		[galleryCellPool removeObject:sv];
 
 		sv.tag = (currentIndex + 1) + 9900;
-//		NSLog(@"added view tagged %d",iv.tag);
 		
 		CGRect frame = sv.frame;
 		frame.origin.y = 0;
@@ -594,7 +591,6 @@
 		}
 		
 		UIXGalleryCell* sv = (UIXGalleryCell*) [scroll viewWithTag:(currentIndex - 1) + ndx+9900];
-//		NSLog(@"iv #%d size: %@",(currentIndex - 1) + ndx,NSStringFromCGSize(iv.frame.size));
 
 		if (sv.item == nil && sv.imageView == nil)
 		{
@@ -673,11 +669,32 @@
 ////////////////////////////////////////////////////
 //
 ////////////////////////////////////////////////////
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration
+//- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
-	//resize and reposition the images
+	CGRect frame;
 
-	CGRect frame;	
+	switch (interfaceOrientation) 
+	{
+		case UIInterfaceOrientationPortrait:
+		case UIInterfaceOrientationPortraitUpsideDown:
+		{
+			frame = CGRectMake(0, 0, 320, 460);
+		}
+			break;
+			
+		case UIInterfaceOrientationLandscapeLeft:
+		case UIInterfaceOrientationLandscapeRight:
+		{
+			frame = CGRectMake(0, 0, 480, 300);
+		}
+			break;
+			
+		default:
+			break;
+	}
+	
+	self.view.frame = frame;
 	
 	scroll.contentSize = CGSizeMake(scroll.frame.size.width * [datasource numberOfItemsforGallery:self], scroll.frame.size.height);
 	scroll.contentOffset = CGPointMake(scroll.frame.size.width * currentIndex, 0);

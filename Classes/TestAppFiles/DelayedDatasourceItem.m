@@ -39,7 +39,10 @@
 {
 	[heldImage release];
 	[image release];
+    [timer release];
 	[super dealloc];
 }
 
 @end
+
+
