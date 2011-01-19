@@ -101,11 +101,9 @@
 #pragma mark UIXGalleryCell
 
 @interface UIXGalleryCell : UIXGalleryTouchableScrollView <UIXGalleryTouchableScrollViewDelegate,UIScrollViewDelegate>
-//@interface UIXGalleryCell : UIScrollView <UIScrollViewDelegate>
 {
 	UIImageView* imageView;
 	UIView* busyView;
-	//	UIActivityIndicatorView* activityIndicator;
 	
 	NSObject<UIXGalleryItem>* item;
 	NSObject<UIXGalleryDatasource>* datasource;
@@ -134,8 +132,7 @@
 
 @interface UIXGalleryController : UIViewController <UIScrollViewDelegate>
 {
-	UIScrollView* scroll;
-//	IBOutlet UIXGalleryTouchableScrollView* scroll;
+	IBOutlet UIXGalleryTouchableScrollView* scroll;
 	UIBarButtonItem* forwardButton;
 	UIBarButtonItem* backButton;
 	

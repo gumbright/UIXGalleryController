@@ -15,7 +15,8 @@
 }
 
 - (id) initWithImage:(UIImage*) img;
+- (id) initWithImageName:(NSString*) imgName;
 
-@property (nonatomic,readonly) UIImage* image;
+@property (nonatomic,retain) UIImage* image;
 
 @end

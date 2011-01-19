@@ -26,6 +26,20 @@
 		9F0D4AA712DE4B8100210CA7 /* GalleryDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D4AA012DE4B8100210CA7 /* GalleryDatasource.m */; };
 		9F0D4AA812DE4B8100210CA7 /* UIXGalleryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D4AA212DE4B8100210CA7 /* UIXGalleryAppDelegate.m */; };
 		9F0D4AA912DE4B8100210CA7 /* UIXGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D4AA412DE4B8100210CA7 /* UIXGalleryViewController.m */; };
+		9F4BE39E12E4A85400F26D90 /* treacle1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BE39012E4A85400F26D90 /* treacle1.jpg */; };
+		9F4BE39F12E4A85400F26D90 /* treacle2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BE39112E4A85400F26D90 /* treacle2.jpg */; };
+		9F4BE3A012E4A85400F26D90 /* treacle3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BE39212E4A85400F26D90 /* treacle3.jpg */; };
+		9F4BE3A112E4A85400F26D90 /* treacle4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BE39312E4A85400F26D90 /* treacle4.jpg */; };
+		9F4BE3A212E4A85400F26D90 /* treacle5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BE39412E4A85400F26D90 /* treacle5.jpg */; };
+		9F4BE3A312E4A85400F26D90 /* treacle6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BE39512E4A85400F26D90 /* treacle6.jpg */; };
+		9F4BE3A412E4A85400F26D90 /* treacle7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BE39612E4A85400F26D90 /* treacle7.jpg */; };
+		9F4BE3A512E4A85400F26D90 /* treacle8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BE39712E4A85400F26D90 /* treacle8.jpg */; };
+		9F4BE3A612E4A85400F26D90 /* treacle9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BE39812E4A85400F26D90 /* treacle9.jpg */; };
+		9F4BE3A712E4A85400F26D90 /* treacle10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BE39912E4A85400F26D90 /* treacle10.jpg */; };
+		9F4BE3A812E4A85400F26D90 /* treacle11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BE39A12E4A85400F26D90 /* treacle11.jpg */; };
+		9F4BE3A912E4A85400F26D90 /* treacle12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BE39B12E4A85400F26D90 /* treacle12.jpg */; };
+		9F4BE3AA12E4A85400F26D90 /* treacle13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BE39C12E4A85400F26D90 /* treacle13.jpg */; };
+		9F4BE3AB12E4A85400F26D90 /* treacle14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F4BE39D12E4A85400F26D90 /* treacle14.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +71,20 @@
 		9F0D4AA212DE4B8100210CA7 /* UIXGalleryAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIXGalleryAppDelegate.m; path = TestAppFiles/UIXGalleryAppDelegate.m; sourceTree = "<group>"; };
 		9F0D4AA312DE4B8100210CA7 /* UIXGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIXGalleryViewController.h; path = TestAppFiles/UIXGalleryViewController.h; sourceTree = "<group>"; };
 		9F0D4AA412DE4B8100210CA7 /* UIXGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIXGalleryViewController.m; path = TestAppFiles/UIXGalleryViewController.m; sourceTree = "<group>"; };
+		9F4BE39012E4A85400F26D90 /* treacle1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treacle1.jpg; path = kittens/treacle1.jpg; sourceTree = "<group>"; };
+		9F4BE39112E4A85400F26D90 /* treacle2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treacle2.jpg; path = kittens/treacle2.jpg; sourceTree = "<group>"; };
+		9F4BE39212E4A85400F26D90 /* treacle3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treacle3.jpg; path = kittens/treacle3.jpg; sourceTree = "<group>"; };
+		9F4BE39312E4A85400F26D90 /* treacle4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treacle4.jpg; path = kittens/treacle4.jpg; sourceTree = "<group>"; };
+		9F4BE39412E4A85400F26D90 /* treacle5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treacle5.jpg; path = kittens/treacle5.jpg; sourceTree = "<group>"; };
+		9F4BE39512E4A85400F26D90 /* treacle6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treacle6.jpg; path = kittens/treacle6.jpg; sourceTree = "<group>"; };
+		9F4BE39612E4A85400F26D90 /* treacle7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treacle7.jpg; path = kittens/treacle7.jpg; sourceTree = "<group>"; };
+		9F4BE39712E4A85400F26D90 /* treacle8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treacle8.jpg; path = kittens/treacle8.jpg; sourceTree = "<group>"; };
+		9F4BE39812E4A85400F26D90 /* treacle9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treacle9.jpg; path = kittens/treacle9.jpg; sourceTree = "<group>"; };
+		9F4BE39912E4A85400F26D90 /* treacle10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treacle10.jpg; path = kittens/treacle10.jpg; sourceTree = "<group>"; };
+		9F4BE39A12E4A85400F26D90 /* treacle11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treacle11.jpg; path = kittens/treacle11.jpg; sourceTree = "<group>"; };
+		9F4BE39B12E4A85400F26D90 /* treacle12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treacle12.jpg; path = kittens/treacle12.jpg; sourceTree = "<group>"; };
+		9F4BE39C12E4A85400F26D90 /* treacle13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treacle13.jpg; path = kittens/treacle13.jpg; sourceTree = "<group>"; };
+		9F4BE39D12E4A85400F26D90 /* treacle14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treacle14.jpg; path = kittens/treacle14.jpg; sourceTree = "<group>"; };
 		9F7BA3B312D4FB98008FE195 /* UIXGallery.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIXGallery.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +176,7 @@
 		9F02462712D62ED700A2C93D /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				9F4BE38F12E4A84300F26D90 /* treacle */,
 				9F0D49D312DE146200210CA7 /* image3.jpg */,
 				9F02462A12D62ED700A2C93D /* image0.jpg */,
 				9F0D49B612DE113700210CA7 /* image1.jpg */,
@@ -173,6 +202,27 @@
 				9F0D4A9912DE4B7300210CA7 /* UIXGalleryController.m */,
 			);
 			path = UIXGalleryViewFiles;
+			sourceTree = "<group>";
+		};
+		9F4BE38F12E4A84300F26D90 /* treacle */ = {
+			isa = PBXGroup;
+			children = (
+				9F4BE39012E4A85400F26D90 /* treacle1.jpg */,
+				9F4BE39112E4A85400F26D90 /* treacle2.jpg */,
+				9F4BE39212E4A85400F26D90 /* treacle3.jpg */,
+				9F4BE39312E4A85400F26D90 /* treacle4.jpg */,
+				9F4BE39412E4A85400F26D90 /* treacle5.jpg */,
+				9F4BE39512E4A85400F26D90 /* treacle6.jpg */,
+				9F4BE39612E4A85400F26D90 /* treacle7.jpg */,
+				9F4BE39712E4A85400F26D90 /* treacle8.jpg */,
+				9F4BE39812E4A85400F26D90 /* treacle9.jpg */,
+				9F4BE39912E4A85400F26D90 /* treacle10.jpg */,
+				9F4BE39A12E4A85400F26D90 /* treacle11.jpg */,
+				9F4BE39B12E4A85400F26D90 /* treacle12.jpg */,
+				9F4BE39C12E4A85400F26D90 /* treacle13.jpg */,
+				9F4BE39D12E4A85400F26D90 /* treacle14.jpg */,
+			);
+			name = treacle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +282,20 @@
 				9F0D49B812DE113700210CA7 /* image1.jpg in Resources */,
 				9F0D49B912DE113700210CA7 /* image2.png in Resources */,
 				9F0D49D412DE146200210CA7 /* image3.jpg in Resources */,
+				9F4BE39E12E4A85400F26D90 /* treacle1.jpg in Resources */,
+				9F4BE39F12E4A85400F26D90 /* treacle2.jpg in Resources */,
+				9F4BE3A012E4A85400F26D90 /* treacle3.jpg in Resources */,
+				9F4BE3A112E4A85400F26D90 /* treacle4.jpg in Resources */,
+				9F4BE3A212E4A85400F26D90 /* treacle5.jpg in Resources */,
+				9F4BE3A312E4A85400F26D90 /* treacle6.jpg in Resources */,
+				9F4BE3A412E4A85400F26D90 /* treacle7.jpg in Resources */,
+				9F4BE3A512E4A85400F26D90 /* treacle8.jpg in Resources */,
+				9F4BE3A612E4A85400F26D90 /* treacle9.jpg in Resources */,
+				9F4BE3A712E4A85400F26D90 /* treacle10.jpg in Resources */,
+				9F4BE3A812E4A85400F26D90 /* treacle11.jpg in Resources */,
+				9F4BE3A912E4A85400F26D90 /* treacle12.jpg in Resources */,
+				9F4BE3AA12E4A85400F26D90 /* treacle13.jpg in Resources */,
+				9F4BE3AB12E4A85400F26D90 /* treacle14.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

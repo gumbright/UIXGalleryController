@@ -28,6 +28,9 @@
 #import "UIXGalleryController.h"
 #import <QuartzCore/QuartzCore.h>
 
+#define CELL_POOL_SIZE 3
+#define PRELOAD_SIZE 1
+
 #pragma mark -
 #pragma mark UIXGalleryTouchableScrollView
 @implementation UIXGalleryTouchableScrollView
@@ -67,6 +70,7 @@
 {
 	[super dealloc];
 }
+
 @end
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -99,6 +103,16 @@
 		self.delegate = self;
 		self.zoomScale = 1.0;		
 		imageView = nil;
+		self.opaque = YES;
+		
+		imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+		imageView.contentMode = UIViewContentModeScaleAspectFit;
+		imageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+		imageView.tag = 9700;
+		imageView.opaque = YES;
+		[self addSubview:imageView];
+		[imageView release];		
+		
     }
     return self;
 }
@@ -108,17 +122,20 @@
 ////////////////////////////////////////////////////////////
 - (void) displayImage:(UIImage*) img
 {
-	if (imageView == nil)
-	{
-		imageView = [[UIImageView alloc] initWithFrame:self.bounds];
-		imageView.contentMode = UIViewContentModeScaleAspectFit;
-		imageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-		imageView.tag = 9700;
-		[self addSubview:imageView];
-		[imageView release];		
-	}
+//	NSLog(@"displayImage begin");
+//	if (imageView == nil)
+//	{
+//		imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+//		imageView.contentMode = UIViewContentModeScaleAspectFit;
+//		imageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//		imageView.tag = 9700;
+//		imageView.opaque = YES;
+//		[self addSubview:imageView];
+//		[imageView release];		
+//	}
 
 	imageView.image = img;
+//	NSLog(@"displayImage done");
 }
 
 ////////////////////////////////////////////////////////////
@@ -126,6 +143,7 @@
 ////////////////////////////////////////////////////////////
 - (void) displayGalleryItem:(NSObject<UIXGalleryItem>*) obj
 {
+//	NSLog(@"displayGalleryItem begin");
 	UIImage* img = obj.image;
 	if (img == nil)
 	{
@@ -139,6 +157,7 @@
 	{
 		[self displayImage:img];
 	}
+//	NSLog(@"displayGalleryItem end");
 	
 }
 
@@ -147,14 +166,17 @@
 ////////////////////////////////////////////////////////////
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
+//	NSLog(@"image kvo changed");
 	UIImage* img = [change objectForKey:NSKeyValueChangeNewKey];
 	if (busyView != nil)
 	{
+//		NSLog(@"remove busy");
 		[busyView removeFromSuperview];
 		busyView = nil;
 	}
 	
 	[self displayImage:img];
+//	NSLog(@"image kvo done");
 }
 
 ////////////////////////////////////////////////////////////
@@ -217,8 +239,6 @@
 ////////////////////////////////////////////////////
 - (void) touchableScrollView:(UIXGalleryTouchableScrollView*) touchableScrollView touchesEnded:(NSSet*) touches withEvent:(UIEvent*) event
 {
-	//http://www.cimgf.com/2010/06/14/differentiating-tap-counts-on-ios/
-	
 	if ([touches count] == 1)
 	{	 
 		UITouch* touch = [touches anyObject];
@@ -258,8 +278,7 @@
 - (void) clear 
 {
 	imageView.image = nil;
-	[imageView removeFromSuperview];
-	imageView = nil;
+	[item removeObserver:self forKeyPath:@"image"];
 	self.item = nil;
 	
 }
@@ -335,11 +354,13 @@
 {
 	UIView* v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
 	v.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+	v.opaque = YES;
 	
 	scroll = [[UIScrollView alloc] initWithFrame:v.bounds];
 	scroll.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	scroll.pagingEnabled = YES;
 	scroll.delegate = self;
+	scroll.opaque = YES;
 	[v addSubview:scroll];
 	[scroll release];
 	
@@ -388,26 +409,54 @@
 	self.navigationController.navigationBar.translucent = YES;
 	self.navigationController.navigationBar.tintColor = [UIColor blackColor];
 		
-	CATransition* trans = [CATransition animation];
-	trans.type = kCATransitionFade;
-	trans.duration = 2.0;
-
-	[[self.view layer] addAnimation:trans forKey:nil];
+//	CATransition* trans = [CATransition animation];
+//	trans.type = kCATransitionFade;
+//	trans.duration = 2.0;
+//
+//	[[self.view layer] addAnimation:trans forKey:nil];
 	
 	//yes 5 is theoratically more than we need, but if I have a timing issue and it is aleviated by always having
 	//something available in the pool, I can prevent the crash which is the worse evil
-	galleryCellPool = [[NSMutableSet setWithCapacity:5] retain];
-	
-	for (int x = 0; x < 5; ++x)
-	{
-		UIXGalleryCell* cell = [[UIXGalleryCell alloc] init];
-		[galleryCellPool addObject:cell];
-		[cell release];
-	}
+	galleryCellPool = [[NSMutableSet setWithCapacity:CELL_POOL_SIZE] retain];
 	
 	CGSize sz = CGSizeMake(scroll.frame.size.width * [datasource numberOfItemsforGallery:self],scroll.frame.size.height);
 	scroll.contentSize = sz;
 	
+}
+
+////////////////////////////////////////////////////
+//
+////////////////////////////////////////////////////
+- (void) recycleCell:(UIXGalleryCell*) cell
+{
+	//just let it autorelease if we are full
+	
+	if ([galleryCellPool count] < CELL_POOL_SIZE)
+	{
+		[cell clear];
+		[galleryCellPool addObject:cell];
+	}
+}
+
+////////////////////////////////////////////////////
+//
+////////////////////////////////////////////////////
+- (UIXGalleryCell*) getCell
+{
+	UIXGalleryCell* cell;
+	
+	if ([galleryCellPool count] != 0)
+	{
+		cell = [[galleryCellPool anyObject] retain];
+		[galleryCellPool removeObject:cell];
+		[cell autorelease];
+	}
+	else 
+	{
+		cell = [[[UIXGalleryCell alloc] init] autorelease];
+	}
+
+	return cell;
 }
 
 ////////////////////////////////////////////////////
@@ -487,33 +536,39 @@
 ////////////////////////////////////////////////////
 - (void) currentIndexChanged
 {
+//	NSLog(@"currentIndexChange start");
 	self.navigationItem.title = [NSString stringWithFormat:@"%d of %d",currentIndex+1,[datasource numberOfItemsforGallery:self]];
-
+	UIXGalleryCell* sv;
+	
 	//
 	//remove any views more than 1 away from current
 	//
-	if ((currentIndex - 2) >= 0)
+	if ((currentIndex - (PRELOAD_SIZE+1)) >= 0)
 	{
-		UIXGalleryCell* sv = (UIXGalleryCell*) [scroll viewWithTag:(currentIndex - 2) + 9900];
+		sv = (UIXGalleryCell*) [scroll viewWithTag:(currentIndex - (PRELOAD_SIZE+1)) + 9900];
 		if (sv != nil)
 		{
+//			NSLog(@"removing cell %d",sv.tag);
 			[[sv retain] removeFromSuperview];
-			[sv clear];
+//			[sv clear];
 			sv.tag = 0;
-			[galleryCellPool addObject:sv];
+//			[galleryCellPool addObject:sv];
+			[self recycleCell:sv];
 			[sv release];
 		}
 	}
 	
-	if ((currentIndex + 2) < [datasource numberOfItemsforGallery:self])
+	if ((currentIndex + (PRELOAD_SIZE+1)) < [datasource numberOfItemsforGallery:self])
 	{
-		UIXGalleryCell* sv = (UIXGalleryCell*) [scroll viewWithTag:(currentIndex + 2) + 9900];
+		sv = (UIXGalleryCell*) [scroll viewWithTag:(currentIndex + (PRELOAD_SIZE+1)) + 9900];
 		if (sv != nil)
 		{
+//			NSLog(@"removing cell %d",sv.tag);
 			[[sv retain] removeFromSuperview];
-			[sv clear];
+//			[sv clear];
 			sv.tag = 0;
-			[galleryCellPool addObject:sv];
+			[self recycleCell:sv];
+//			[galleryCellPool addObject:sv];
 			[sv release];
 		}
 	}
@@ -521,40 +576,50 @@
 	//
 	// add left/right as needed
 	//
-	if (currentIndex > 0 && [scroll viewWithTag:(currentIndex-1)+9900] == nil) //do left
-	{
-		UIXGalleryCell* sv = [[galleryCellPool anyObject] retain];
-		
-		[galleryCellPool removeObject:sv];
-		sv.tag = (currentIndex - 1) + 9900;
-		
-		CGRect frame = sv.frame;
-		frame.origin.y = 0;
-		frame.origin.x = scroll.frame.size.width * (currentIndex - 1);
-		frame.size.width = scroll.frame.size.width;
-		frame.size.height = scroll.frame.size.height;
-		sv.frame = frame;
-		[scroll addSubview:sv];
-		[scroll sendSubviewToBack:sv];
-		[sv release];
+	for (int ndx=1; ndx <= PRELOAD_SIZE; ndx++)
+	{	
+		if (currentIndex > 0 && [scroll viewWithTag:(currentIndex-ndx)+9900] == nil) //do left
+		{
+			sv = [self getCell];
+//			sv = [[galleryCellPool anyObject] retain];
+//			
+//			[galleryCellPool removeObject:sv];
+			sv.tag = (currentIndex - ndx) + 9900;
+			
+			CGRect frame = sv.frame;
+			frame.origin.y = 0;
+			frame.origin.x = scroll.frame.size.width * (currentIndex - ndx);
+			frame.size.width = scroll.frame.size.width;
+			frame.size.height = scroll.frame.size.height;
+			sv.frame = frame;
+//			NSLog(@"adding cell %d",sv.tag);
+			[scroll addSubview:sv];
+			[scroll sendSubviewToBack:sv];
+//			[sv release];
+		}
 	}
 	
-	if (currentIndex < [datasource numberOfItemsforGallery:self]-1 &&  [scroll viewWithTag:(currentIndex+1)+9900] == nil) //do right
-	{
-		UIXGalleryCell* sv = [[galleryCellPool anyObject] retain];
-		[galleryCellPool removeObject:sv];
+	for (int ndx=1; ndx <= PRELOAD_SIZE; ndx++)
+	{	
+		if (currentIndex < [datasource numberOfItemsforGallery:self]-1 &&  [scroll viewWithTag:(currentIndex+ndx)+9900] == nil) //do right
+		{
+			sv = [self getCell];
+//			sv = [[galleryCellPool anyObject] retain];
+//			[galleryCellPool removeObject:sv];
 
-		sv.tag = (currentIndex + 1) + 9900;
-		
-		CGRect frame = sv.frame;
-		frame.origin.y = 0;
-		frame.origin.x = scroll.frame.size.width * (currentIndex + 1);
-		frame.size.width = scroll.frame.size.width;
-		frame.size.height = scroll.frame.size.height;
-		sv.frame = frame;
-		[scroll addSubview:sv];
-		[scroll sendSubviewToBack:sv];
-		[sv release];
+			sv.tag = (currentIndex + ndx) + 9900;
+			
+			CGRect frame = sv.frame;
+			frame.origin.y = 0;
+			frame.origin.x = scroll.frame.size.width * (currentIndex + ndx);
+			frame.size.width = scroll.frame.size.width;
+			frame.size.height = scroll.frame.size.height;
+			sv.frame = frame;
+//			NSLog(@"adding cell %d",sv.tag);
+			[scroll addSubview:sv];
+			[scroll sendSubviewToBack:sv];
+//			[sv release];
+		}
 	}
 	
 	//
@@ -562,8 +627,9 @@
 	//
 	if ([scroll viewWithTag:currentIndex + 9900] == nil)
 	{
-		UIXGalleryCell* sv = [[galleryCellPool anyObject] retain];
-		[galleryCellPool removeObject:sv];
+		sv = [self getCell];
+//		sv = [[galleryCellPool anyObject] retain];
+//		[galleryCellPool removeObject:sv];
 		sv.tag = currentIndex + 9900;
 	
 		CGRect frame = sv.frame;
@@ -572,28 +638,31 @@
 		frame.size.width = scroll.frame.size.width;
 		frame.size.height = scroll.frame.size.height;
 		sv.frame = frame;
+//		NSLog(@"adding cell %d",sv.tag);
 		[scroll addSubview:sv];
 		[scroll sendSubviewToBack:sv];
-		[sv release];
+//		[sv release];
 	}
 	
 	//
 	// make sure image is loaded for each
 	//
-	for (NSInteger ndx = 0; ndx < 3; ++ndx)
+	for (NSInteger ndx = 0; ndx < (PRELOAD_SIZE*2)+1; ++ndx)
 	{
-
 		NSInteger photoNdx = (currentIndex - 1) + ndx;
-		
+
+//		NSLog(@"update %d",photoNdx);
 		if (photoNdx < 0 || photoNdx >= [datasource numberOfItemsforGallery:self])
 		{
 			continue;
 		}
 		
-		UIXGalleryCell* sv = (UIXGalleryCell*) [scroll viewWithTag:(currentIndex - 1) + ndx+9900];
+		sv = (UIXGalleryCell*) [scroll viewWithTag:(currentIndex - 1) + ndx+9900];
 
-		if (sv.item == nil && sv.imageView == nil)
+		if (sv.item == nil && sv.imageView.image == nil)
 		{
+//			NSLog(@"%d needs image",photoNdx);
+			
 			NSObject<UIXGalleryItem>* item = [datasource gallery:self itemAtIndex: photoNdx];
 
 			if (ndx !=1) //its the center
@@ -615,6 +684,8 @@
 	}
 	
 	[self adjustControls];
+
+//	NSLog(@"currentIndexChange end");
 }
 
 ////////////////////////////////////////////////////
@@ -775,8 +846,6 @@
 	[forwardButton release];
 	[backButton release];
 
-//	[toolbar release];
-	
     [super dealloc];
 }
 

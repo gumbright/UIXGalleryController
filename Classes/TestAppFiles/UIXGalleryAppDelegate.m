@@ -18,6 +18,23 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
+- (void) checkLoadTimes
+{
+	NSMutableArray* nameArray = [NSMutableArray arrayWithCapacity:14];
+	
+	for (int x=1; x <= 14; ++x)
+	{
+		[nameArray addObject:[NSString stringWithFormat:@"treacle%d.jpg",x]];
+	}
+
+//	NSLog(@"load start");
+//	for (NSString* filename in nameArray)
+//	{
+//		UIImage* img = [UIImage imageNamed:filename];
+//	}
+//	NSLog(@"load end");
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after application launch.
@@ -27,6 +44,8 @@
     [self.window addSubview:nav.view];
     [self.window makeKeyAndVisible];
 
+	[self checkLoadTimes];
+	
     return YES;
 }
 
@@ -76,6 +95,7 @@
     /*
      Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
      */
+	NSLog(@"---got memory warning---");
 }
 
 
