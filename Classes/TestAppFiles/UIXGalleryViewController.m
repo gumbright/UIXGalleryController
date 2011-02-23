@@ -74,8 +74,11 @@
 {
 	UIXGalleryController* vc = [[UIXGalleryController alloc] init];
 	vc.datasource = datasource;
-	[self.navigationController pushViewController:vc animated:YES];
+    UINavigationController* nc = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    [self presentModalViewController:nc animated:YES];
 	[vc release];
+    [nc release];
 }
 
 @end

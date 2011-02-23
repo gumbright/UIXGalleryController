@@ -35,6 +35,7 @@
 	CGImageRelease(img);
 	
 	[self performSelectorOnMainThread:@selector(applyImage:) withObject:uimg waitUntilDone:NO modes:[NSArray arrayWithObject:NSDefaultRunLoopMode]];
+
 	[pool release];
 }
 

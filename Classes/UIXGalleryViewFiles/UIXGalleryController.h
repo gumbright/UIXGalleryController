@@ -135,6 +135,10 @@
 	IBOutlet UIXGalleryTouchableScrollView* scroll;
 	UIBarButtonItem* forwardButton;
 	UIBarButtonItem* backButton;
+	UIBarButtonItem* playButton;
+	
+	NSTimer *slideshowTimer;
+	BOOL timerRunning;
 	
 	UIToolbar* toolbar;
 	
@@ -144,6 +148,9 @@
 	BOOL toolsShowing;
 	
 	NSMutableSet* galleryCellPool;
+    
+    NSTimer *rotationTimer;
+    BOOL allowRotate;
 }
 
 @property (nonatomic, retain) id<UIXGalleryDatasource> datasource;
