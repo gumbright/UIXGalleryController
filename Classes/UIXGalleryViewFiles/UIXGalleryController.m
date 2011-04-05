@@ -161,6 +161,7 @@
 	else 
 	{
 		[self displayImage:img];
+		self.busyView = nil;
 	}
 //	NSLog(@"displayGalleryItem end");
 	
@@ -173,12 +174,8 @@
 {
 //	NSLog(@"image kvo changed");
 	UIImage* img = [change objectForKey:NSKeyValueChangeNewKey];
-	if (busyView != nil)
-	{
-//		NSLog(@"remove busy");
-		[busyView removeFromSuperview];
-		busyView = nil;
-	}
+	self.busyView = nil;
+	// ???: doesnt it need to be removed from superview?
 	
 	[self displayImage:img];
 //	NSLog(@"image kvo done");
@@ -191,7 +188,8 @@
 {
 	[item removeObserver:self forKeyPath:@"image"];
 	[item release];
-    [super dealloc];
+	[busyView release];
+	[super dealloc];
 }
 
 ////////////////////////////////////////////////////
@@ -309,21 +307,28 @@
 ////////////////////////////////////////////////////
 - (void) setBusyView:(UIView*) v
 {
-	if (busyView != nil)
+	if (busyView == v)
 	{
-		[busyView removeFromSuperview];
+		return;
 	}
 	
-	//rect to center view
-	CGRect frame = v.bounds;
+	[busyView removeFromSuperview];
+	[busyView release];
 	
-	frame.origin.x = (self.bounds.size.width - v.bounds.size.width) / 2; 
-	frame.origin.y = (self.bounds.size.height - v.bounds.size.height) / 2;
+	if (v != nil)
+	{
+		//rect to center view
+		CGRect frame = v.bounds;
+		
+		frame.origin.x = (self.bounds.size.width - v.bounds.size.width) / 2; 
+		frame.origin.y = (self.bounds.size.height - v.bounds.size.height) / 2;
+		
+		v.frame = frame;
+		
+		[self addSubview:v];
+	}
 	
-	v.frame = frame;
-	
-	[self addSubview:v];
-	busyView = v;
+	busyView = [v retain];
 }
 
 @end
@@ -337,9 +342,8 @@
 @interface UIXGalleryController ()
 
 - (void) currentIndexChanged;
-- (void)createTimer;
 - (void)startTimer;
-- (void)stopTimer;
+- (void)destroyTimer;
 - (void)toggleTools;
 
 @end
@@ -357,7 +361,6 @@
 	if (self = [super init])
 	{
 		toolsShowing = YES;
-		[self createTimer];
         rotationTimer = [[NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(allowRotation:) userInfo:nil repeats:NO] retain]; 
 	}	
 	
@@ -620,8 +623,13 @@
 		if (currentIndex > 0 && [scroll viewWithTag:(currentIndex-ndx)+9900] == nil) //do left
 		{
 			sv = [[galleryCellPool anyObject] retain];
-			
-			[galleryCellPool removeObject:sv];
+			if (sv)
+			{
+				[galleryCellPool removeObject:sv];
+			} else 
+			{
+				sv = [[self createNewGalleryCell] retain];
+			}
 			sv.tag = (currentIndex - ndx) + 9900;
 			[sv clear];
 			sv.zoomScale = 1.0;
@@ -642,8 +650,14 @@
 		if (currentIndex < [datasource numberOfItemsforGallery:self]-1 &&  [scroll viewWithTag:(currentIndex+ndx)+9900] == nil) //do right
 		{
 			sv = [[galleryCellPool anyObject] retain];
-			[galleryCellPool removeObject:sv];
-
+			if (sv)
+			{
+				[galleryCellPool removeObject:sv];
+			} else 
+			{
+				sv = [[self createNewGalleryCell] retain];
+			}
+			
 			sv.tag = (currentIndex + ndx) + 9900;
 			[sv clear];
 			sv.zoomScale = 1.0;
@@ -665,7 +679,14 @@
 	if ([scroll viewWithTag:currentIndex + 9900] == nil)
 	{
 		sv = [[galleryCellPool anyObject] retain];
-		[galleryCellPool removeObject:sv];
+		if (sv)
+		{
+			[galleryCellPool removeObject:sv];
+		} else 
+		{
+			sv = [[self createNewGalleryCell] retain];
+		}
+		
 		sv.tag = currentIndex + 9900;
 	
 		CGRect frame = [self frameForPageAtIndex:currentIndex];/*sv.frame;
@@ -716,6 +737,19 @@
 	}
 	
 	[self adjustControls];
+}
+
+////////////////////////////////////////////////////
+//
+////////////////////////////////////////////////////
+- (UIXGalleryCell *)createNewGalleryCell {
+	UIXGalleryCell* cell = [[UIXGalleryCell alloc] init];
+	cell.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | 
+	UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin |
+	UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+	cell.decelerationRate = UIScrollViewDecelerationRateFast;
+	[cell autorelease];
+	return cell;
 }
 
 ////////////////////////////////////////////////////
@@ -838,6 +872,7 @@
 ////////////////////////////////////////////////////
 - (void) viewWillDisappear:(BOOL) animated 
 {
+	[self destroyTimer];
 	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
 }
 
@@ -857,6 +892,7 @@
 ////////////////////////////////////////////////////
 - (void)viewDidUnload 
 {
+	[self destroyTimer];
 	[galleryCellPool release]; galleryCellPool = nil;
 	[forwardButton release]; forwardButton = nil;
 	[backButton release]; backButton = nil;
@@ -869,7 +905,7 @@
 ////////////////////////////////////////////////////
 - (void)dealloc 
 {
-	[self stopTimer];
+	[self destroyTimer];
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
 	[galleryCellPool release];
 	
@@ -878,10 +914,7 @@
 	[forwardButton release];
 	[backButton release];
 	[playButton release];
-
-//	[toolbar release];
-	
-    [super dealloc];
+	[super dealloc];
 }
 
 ////////////////////////////////////////////////////
@@ -904,7 +937,7 @@
 		[scroll setContentOffset:CGPointMake(currentIndex * scroll.frame.size.width,0) animated:animated];
 		[self currentIndexChanged];
 	} else {
-		[self stopTimer];
+		[self destroyTimer];
 	}
 
 }
@@ -913,30 +946,24 @@
 //
 ////////////////////////////////////////////////////
 
-- (void)createTimer {
+- (void)startTimer {
 	if (!slideshowTimer) {
 		slideshowTimer = [[NSTimer timerWithTimeInterval:2.0 target:self selector:@selector(slideshowTimerFired:) userInfo:nil repeats:YES] retain];
-	}
-}
 
-- (void)startTimer {
-	if (slideshowTimer) {
 		NSDate *now = [NSDate date];
 		NSDate *newDate = [NSDate dateWithTimeIntervalSince1970:[now timeIntervalSince1970]+2.0];
 		[slideshowTimer setFireDate:newDate];
-		timerRunning = YES;
-		[[NSRunLoop currentRunLoop] addTimer:slideshowTimer forMode:NSRunLoopCommonModes];	
+		[[NSRunLoop currentRunLoop] addTimer:slideshowTimer forMode:NSRunLoopCommonModes];
 	}
 }
 
-- (void)stopTimer {
+- (void)destroyTimer {
 	if ([slideshowTimer isValid]) {
 		[slideshowTimer invalidate];
-		[slideshowTimer release];
-		slideshowTimer = nil;
-		timerRunning = NO;
-		[self createTimer];
 	}
+
+	[slideshowTimer release];
+	slideshowTimer = nil;
 }
 
 - (IBAction) forwardButtonPressed:(id) sender
@@ -1042,8 +1069,7 @@
 ////////////////////////////////////////////////////
 - (void) setphotoCollection:(id<UIXGalleryDatasource>) g
 {
-	[(NSObject*)datasource release];
-	datasource = [(NSObject*)g retain];
+	datasource = g;
 }
 
 ///////////////////////////////////////
@@ -1063,9 +1089,7 @@
 ///////////////////////////////////////
 - (void) cellTapped:(NSNotification*) notification
 {
-	if (timerRunning) {
-		[self stopTimer];
-	}	
+	[self destroyTimer];
 	[self performSelector:@selector(toggleTools) withObject:nil  afterDelay:.3];
 }
 @end

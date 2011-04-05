@@ -138,7 +138,6 @@
 	UIBarButtonItem* playButton;
 	
 	NSTimer *slideshowTimer;
-	BOOL timerRunning;
 	
 	UIToolbar* toolbar;
 	
@@ -153,11 +152,12 @@
     BOOL allowRotate;
 }
 
-@property (nonatomic, retain) id<UIXGalleryDatasource> datasource;
+@property (nonatomic, assign) id<UIXGalleryDatasource> datasource;
 @property (assign) NSInteger currentIndex;
 
 - (IBAction) backButtonPressed:(id) sender;
 - (IBAction) forwardButtonPressed:(id) sender;
 
+- (UIXGalleryCell *)createNewGalleryCell;
 //- (void) reloadImageAtIndex:(NSUInteger) index;
 @end
